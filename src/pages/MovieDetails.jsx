@@ -7,6 +7,7 @@ import timeFormat from "../lib/timeFormat";
 import DateSelect from "../components/DateSelect"
 import MovieCard from '../components/MovieCard'
 import { useNavigate } from "react-router-dom";
+import Loading from '../components/Loading'
 
 
 const MovieDetails = () => {
@@ -94,7 +95,7 @@ const MovieDetails = () => {
       </div>
     </div>
   ) : (
-    <div>Loading....</div>
+   <Loading/>
   );
 };
 export default MovieDetails;
